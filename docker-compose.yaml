@@ -1,0 +1,14 @@
+services:
+  backend_core_db:
+    image: postgres:15.1
+    ports:
+      - 5433:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+
+volumes:
+  postgres:
