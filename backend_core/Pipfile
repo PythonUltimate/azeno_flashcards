@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "==4.1.6"
 psycopg2 = "==2.9.5"
+dj-database-url = "==1.2.0"
 
 [dev-packages]
 
