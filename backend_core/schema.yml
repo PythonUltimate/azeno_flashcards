@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Azeno Flashcards
+  version: 1.0.0
+  description: Not yet
+paths:
+  /api/v1/flashcards/:
+    get:
+      operationId: api_v1_flashcards_list
+      tags:
+      - api
+      security:
+      - cookieAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FlashCard'
+          description: ''
+components:
+  schemas:
+    FlashCard:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        question:
+          type: string
+        answer:
+          type: string
+        author:
+          type: integer
+        category:
+          type: string
+          nullable: true
+          maxLength: 32
+        difficulty:
+          type: integer
+        rating:
+          type: integer
+          maximum: 2147483647
+          minimum: -2147483648
+        tags:
+          type: array
+          items:
+            type: integer
+        decks:
+          type: array
+          items:
+            type: integer
+      required:
+      - answer
+      - author
+      - decks
+      - difficulty
+      - id
+      - question
+      - tags
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: sessionid

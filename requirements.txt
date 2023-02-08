@@ -3,12 +3,10 @@ certifi==2022.12.7
 distlib==0.3.6
 dj-database-url==1.2.0
 Django==4.1.6
-djangorestframework==3.14.0
 filelock==3.9.0
 pipenv==2023.2.4
 platformdirs==3.0.0
 psycopg2==2.9.5
-pytz==2022.7.1
 sqlparse==0.4.3
 virtualenv==20.19.0
 virtualenv-clone==0.5.7
