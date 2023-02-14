@@ -1,0 +1,78 @@
+{
+  "decks": [
+    {
+      "difficulty": 3,
+      "tags": [
+        "python",
+        "django"
+      ],
+      "name": "python advanced",
+      "description": "Awesome deck for learning python",
+      "author": 1,
+      "id": 1
+    },
+    {
+      "difficulty": 2,
+      "tags": [
+        "js",
+        "html"
+      ],
+      "name": "js for learning bacics",
+      "description": "Awesome deck for learning is",
+      "author": 1,
+      "id": 2
+    },
+    {
+      "difficulty": 2,
+      "tags": [
+        "js",
+        "react"
+      ],
+      "name": "js for learning advanced features",
+      "description": "Awesome deck for learning js",
+      "author": 1,
+      "id": 3
+    }
+  ],
+  "flashcards": [
+    {
+      "author": 1,
+      "question": "Test question",
+      "answer": "Test answer",
+      "decks": 1,
+      "category": "js",
+      "difficulty": 1,
+      "rating": 217,
+      "tags": [
+        1
+      ],
+      "id": 1
+    },
+    {
+      "author": 1,
+      "question": "Another question",
+      "answer": "Elo answer",
+      "decks": 1,
+      "category": "js",
+      "difficulty": 1,
+      "rating": 2137,
+      "tags": [
+        1
+      ],
+      "id": 2
+    },
+    {
+      "author": 1,
+      "question": "XD question",
+      "answer": "Elo answer",
+      "decks": 2,
+      "category": "js",
+      "difficulty": 1,
+      "rating": 2137,
+      "tags": [
+        1
+      ],
+      "id": 2
+    }
+  ]
+}
